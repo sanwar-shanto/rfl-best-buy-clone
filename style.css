@@ -1,0 +1,887 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position: sticky;
+    min-height: 5vh;
+    z-index: 100;
+    top: 0;
+}
+
+.navbar1{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 4rem;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #ffffffff;
+}
+
+.navbar1-div1{
+    padding-left: 2rem;
+    margin-right: 5rem;
+    width: 10%;
+}
+
+.navbar1-div2{
+    width: 30%;
+    height:60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+
+}
+
+
+#mirco{
+    font-size: 1.5rem;
+    padding: 5px;
+    color: black;
+    border: none;
+    background: transparent;
+}
+
+#search-input{
+    width: 75%;
+    height: 80%;
+    border: none;
+    background-color:  #EFEFEF;
+    font-size: 1rem;
+    padding: 0 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#search-input:focus{
+    background-color:white;
+    outline: #B80000;
+    border: 2px solid #B80000;
+}
+.navbar1-div2 form:focus{
+    background-color: white;
+}
+#search{
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-right: 2px;
+    border: none;
+    background: transparent;
+}
+
+
+.button1{
+    background: transparent;
+    border: none;
+}
+
+.navbar1-div3{
+    width: 8%;
+    margin: 0 auto;
+}
+
+
+.navbar1-div4{
+    margin: 0 auto;
+    margin-left: 2rem;
+    width: 14%;
+    font-size: 1.1rem;
+}
+
+.navbar1-div4 a{
+    text-decoration: none;
+    color: black;
+}
+.span1{
+    padding: 0 5px;
+    font-weight: bolder;
+}
+
+.navbar1-div4 i{
+    color:white;
+    background-color: #B80000;
+
+    border:none;
+    padding: 5px;
+    border-radius: 100%;
+    font-size: 15px;
+}
+
+
+.navbar1-div5{
+    margin: 0 auto;
+    width: 10%;
+}
+
+.navbar1-div5-btn{
+    color:white;
+    padding: 0.7rem;
+    background-color: #B80000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+.navbar1-div6{
+    width: 3%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #737E80;
+}
+
+
+.cart{
+    position: relative;
+}
+
+
+.cartisempty{
+
+    width: 50vh;
+    height: 25vh;
+    position: absolute;
+    background-color: white;
+    text-align: center; 
+    margin-left: -17rem;
+    margin-top: 1rem;
+    
+    display: none;
+}
+
+.cardpara1{
+    font-size: smaller;
+
+}
+.navbar1-div7{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    width: 3%;
+    color: #737E80;
+}
+
+
+
+.cart:hover .cartisempty{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.profilecontainer{
+    width: 50vh;
+    margin-top: 7px;
+    margin-left: -17rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    display: none;
+    position: absolute;
+    border: 0.5px solid black;
+    border-top: none;
+}
+.manageroder{
+    margin-bottom: 2rem;
+}
+.topprofile{
+    padding-left: 20px;
+    padding-top: 2rem;
+    font-size: 15px;
+}
+
+.topprofile p{
+    padding-bottom: 10px;
+    color: #B80000;
+    font-weight: bold;
+}
+
+.track{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFEF;
+}
+
+.track p{
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.oderidoremail{
+    display: flex;
+    border: none;
+
+}
+
+#oderid{
+    padding: 5px 2rem;
+    border: 1px solid black;
+    border-right: none;
+    
+}
+
+.fa-play{
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: #EFEFEF;
+}
+
+.sign{
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sign input{
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    padding: 10px 27px;
+    background-color: #D20000;
+    color: white;
+    border: none;
+}
+
+
+.navbar1-div7{
+    position: relative;
+}
+
+.navbar1-div7:hover .profilecontainer{
+    display: block;
+}
+
+/* navbar1 ends here */
+
+
+/* navbar2 starts here */
+
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B80000;
+   padding: 1.1rem 2rem;
+   min-height: 5vh;
+}
+.navbar2-a{
+    text-decoration: none;
+    color: white;
+    padding: 0 4px;
+    font-size: 14px;
+}
+.navbar2-span{
+    font-size: 12px;
+}
+
+/* navbar2 ends here */
+
+/* main section starts here */
+
+ #image1{
+    min-height: 90vh;
+    width: 100%;
+}
+#image2{
+    min-height: 10vh;
+    width: 100%;
+}
+
+
+.promo-section{
+    min-height: 85vh;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: #B80000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo-section .promot-container .promo1{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+} 
+
+.promo-section .promot-container .promo1 img{
+    width: 100%;
+} 
+
+.promot-container{
+    display: flex;
+    justify-content: space-between;
+    height: 53vh;
+}
+
+.promotions-heading{
+    padding-left: 2rem;
+    height: 10vh;
+    font-size: 2rem;
+    color: white;
+}
+
+.all-promotions{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    height: 10vh;
+    font-size: 1rem;
+    color: white;
+}
+.promo1{
+    padding: 5px;
+}
+.sub-promo1{
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    height: 18vh;
+}
+
+.days-left{
+    border-radius: 10px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #EFEFEF;
+    padding: 5px;
+}
+
+.promo-details{
+    width: 77%;
+    padding-left: 10px;
+}
+
+.offer-days{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.days-lefts{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.promo-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.discount-heading{
+    font-size: 15px;
+}
+
+.hotdeal-section{
+    margin: 0 1.5rem;
+}
+
+.hotdeal-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #B80000;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    color: white;
+}
+.hotdeal-menu{
+    margin: 0.8rem 0;
+}
+
+.hotdeal-menu a{
+    text-decoration: none;
+    color: grey;
+    margin-right: 10px;
+}
+
+.hotdealhover{
+    border-bottom: 2px solid #B80000;
+}
+
+.hotdeal-menu a:hover{
+    border-bottom:2px solid #B80000;
+}
+.hotdeal-card-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.hot-deal1{
+    margin: 0.7rem;
+    width: 19%;
+    border: 1px solid black;
+    border-bottom: none;
+    min-height: auto;
+}
+
+.sub-hotdeal img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.hotdeal-details{
+    margin-left: 0.5rem;
+    margin-right: 0.3rem;
+}
+
+.hotdealdetails{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.hotdealreviewstar{
+    color: #E31119;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.instock{
+    color: green;
+    font-size: 12x;
+}
+
+.instockicon{
+    border: 1px solid green;
+    padding: 2px;
+    font-size: 10px;
+    border-radius: 100%;
+    height: 8px;
+    width: 12px;
+}
+
+.previousprice{
+    margin-bottom: 10px;
+    text-decoration: line-through;
+    color: #B80000;
+}
+
+.lastprice{
+    color: #B80000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-bangladeshi-taka-sign{
+    margin-right: 5px;
+}
+
+/* furniture starts  here */
+
+.furniture-contianer{
+    display: flex;
+    flex-direction: column;
+   
+    background-color: white;
+    min-height: 80vh;
+    display: none;
+    position: absolute;
+    margin-top: 1rem;
+}
+.fivecontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.fourcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.sub5container{
+    width: auto;
+    padding: 1rem 1.7rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.furniture-para{
+    padding-left: 20px;
+}
+
+.furniture-para h5{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.furniture-para p{
+    margin-bottom: 4px;
+    font-size: 14px;
+
+}
+.navbar2-div1{
+    position: relative;
+}
+.navbar2-div1:hover .furniture-contianer{
+    display: block;
+}
+
+.showmore{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+
+}
+.showmore input{
+    font-size: 0.8rem;
+    padding: 0.7rem 1.5rem;
+    color: #B80000;
+    background-color: white;
+    border-color: #B80000;
+}
+
+.undershowmore{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(194, 191, 191);
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+.subundershowmore{
+    width: 16%;
+    margin: 0 1rem;
+    
+}
+
+.subundershowmore img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+.bannnerimage h6{
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: smaller;
+    font-weight: 500;
+}
+
+.subundershowmore:hover img{
+    transform: scale(1.1);
+}
+.subundershowmore:hover h6{
+    color: #B80000;
+}
+
+.Exclusive-cate{
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(194, 191, 191);
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+
+.subexclusive1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.exclusiveimage{
+    width: 24%;
+    padding: 0 1rem;
+}
+.exclusiveimage img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.exclusive-heading{
+    width: 95%;
+    background-color: #B80000;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+
+.exclusive-heading h1{
+    color: #EFEFEF;
+    text-align: center;
+    font-size: 3rem;
+}
+.exclusiveimage h6{
+    text-align: center;
+    color: black;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 430;
+}
+
+.exclusivehr{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.exclusiveimage:hover img{
+    transform: scale(1.1);
+}
+
+.exclusiveimage:hover h6{
+    color: #B80000;
+}
+
+
+.mbanner{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.mbanner1{
+    display: flex;
+    flex-direction: column;
+}
+.mbanner2{
+    display: flex;
+    flex-direction: column;
+}
+.mbanner1 img{
+    width: 400px;
+    height: 250px;
+    padding: 10px 0 10px 0;
+}
+.mbanner2 img{
+    width: 410px;
+    height: 500px;
+    padding: 10px 0;
+}
+
+
+/* furniture ends  here */
+
+/* main section ends here */
+
+/* footer section start here */
+
+.stayconnected{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.connected{
+    background-color: #F6F6F6;
+    width: 45%;
+    padding: 1rem 0;
+    text-align: center;
+    margin-right: 1rem;
+}
+.get-social{
+    background-color: #F6F6F6;
+    width: 45%;
+    padding: 1rem 0;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.subscribe .subscribe-input{
+ width: 70%;
+ margin-top: 5px;
+ outline: none;
+
+}
+.subscribe .subscribe-btn{
+ width: 20%;
+ margin-top: 5px;
+ background-color: #B80000;
+ color: white;
+}
+.subscribe ::placeholder{
+    padding-left: 10px;
+}
+.subscribe input{
+ padding:0.4rem;
+ border: none;
+}
+
+.get-social-icon{
+    margin: 1rem 0;
+}
+
+.get-social-icon a{
+    padding: 5px;
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-facebook-f{
+    width: 20px;
+    height: 20px;
+}
+.fa-instagram{
+    width: 20px;
+    height: 20px;
+}
+.fa-youtube{
+    width: 20px;
+    height: 20px;
+}
+
+.get-social-icon a:hover{
+    background-color: #B80000;
+}
+
+
+
+
+.allcontact{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    margin: 2rem;
+}
+
+.allcontact a{
+    color: #B80000;
+    text-decoration: none;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-size: small;
+}
+
+.allcontact h2{
+    font-size: 1.3rem;
+    padding-bottom: 8px;
+    color: #B80000;
+}
+
+.subcontactus{
+    display: flex;
+    flex-direction: column;
+}
+
+.suballcontact{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.suballcontactlast{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.subcontactus1{
+    display: flex;
+    margin: 0 auto;
+}
+
+.subcontactus2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.subcontactus3{
+    width: 30%;
+    margin-left: 1rem;
+}
+
+.subcontactus1 img{
+    width: 100%;
+    margin: 10px 10px;
+}
+
+.subcontactus3 img{
+    width: 100%;
+    margin: 5px;
+}
+
+.payment-getway{
+    text-align: right;
+}
+
+.subcontactus h3{
+    color: #B80000;
+    margin-top: 2rem;
+}
+
+.last-footer{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.last-footer-div1{
+    width: 47%;
+}
+
+.last-footer-div1 h4{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 15px;
+    color: #737E80;
+}
+
+.last-footer-div1 p{
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.last-footer-div1 a{
+    text-decoration: none;
+    color: #B80000;
+    font-weight: bold;
+}
+
+
+.chat button{
+    background-color: rgb(16, 105, 206);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+.chatbtn{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.fa-comment{
+
+    padding: 1rem 5px;
+    
+}
+
+.chat button:hover{
+    transform: scale(1.1);
+}
+
+
+/* footer section ends here */
